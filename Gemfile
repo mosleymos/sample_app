@@ -4,16 +4,18 @@ ruby '2.0.0'
 
 
 gem 'rails', '4.0.2'
-
+gem 'bootstrap-sass'
+gem 'binding_of_caller'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
 
-  gem 'guard-rspec'
   gem 'spork-rails'
   gem 'guard-spork'
   gem 'childprocess' 
   gem 'better_errors'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
 
 end
 
