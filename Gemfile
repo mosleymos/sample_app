@@ -32,10 +32,28 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Better server
+gem 'thin'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # Testing installation
+  gem 'fuubar'
+  gem 'capybara'
+  gem 'rspec'
+  gem 'rspec-rails'
+
+  # Policy our code
+  gem 'overcommit'
+  gem 'rubocop'
+
+  # Security gem
+  gem 'brakeman'
 end
+
+gem 'simplecov', :require => false, :group => :test
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
